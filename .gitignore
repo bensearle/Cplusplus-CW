@@ -1,0 +1,8 @@
+*.o
+*.a
+*.swp
+fraction
+tests/fraction_test
+*.pdf
+*vcxproj*
+*Debug

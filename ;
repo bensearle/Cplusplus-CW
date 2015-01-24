@@ -1,0 +1,34 @@
+#pragma once
+#include<iostream>
+#include<utility>
+#include<vector>
+using namespace std;
+
+class sample {
+private:
+	int number;
+	vector<double> values; // vector of doubles
+public:
+	sample();
+	sample(int);
+	sample(vector<double> values);
+	sample(int number, vector<double> values);
+	int num() const;
+	void set_num(const int &n);
+
+	const vector<double> &get_data() const ;
+	void set_data(const vector<double> &v);
+
+	double maximum();
+	double minimum();
+	double range();
+	double midrange();
+	double mean();
+	double variance();
+	double std_deviation();
+	double median();
+};
+
+ostream& operator<<(ostream &s, const sample &smp);
+
+istream& operator>>(istream &s, sample &smp);
